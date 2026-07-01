@@ -16,6 +16,7 @@ The project includes:
 - Model training
 - Model serialization using Joblib
 - Prediction pipeline
+- fastapi backend main.py for future improvement like deployment using aws or hugging face space
 - Interactive Streamlit web application
 - Cloud deployment using Streamlit Community Cloud
 
@@ -116,18 +117,8 @@ streamlit run app.py
 
 ---
 
-##  Deployment
 
-The application is deployed using **Streamlit Community Cloud**.
-
-link:
-
-https://medbuddy-heart-prediction.streamlit.app
-
----
-
-
-## Created by--
+## Created by
 
 **Hammad Hussain**
 
