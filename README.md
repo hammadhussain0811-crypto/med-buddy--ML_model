@@ -56,7 +56,7 @@ med-buddy--ML_model/
 │   └── main.py
 │
 ├── dataset/
-│
+|
 ├── model_dir/
 │   └── heart_disease_prediction_model.joblib
 │
@@ -153,16 +153,6 @@ https://medbuddy-heart-prediction.streamlit.app
 
 ---
 
-## 📈 Future Improvements
-
-- Better UI/UX
-- Model explainability (SHAP)
-- Multiple ML model comparison
-- Docker deployment
-- REST API integration
-- User authentication
-
----
 
 ## 👨‍💻 Author
 
