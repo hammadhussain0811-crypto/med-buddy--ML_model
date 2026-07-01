@@ -2,11 +2,11 @@
 
 A Machine Learning web application that predicts the probability of heart disease based on patient health parameters.
 
-## 🌐 Live Demo
+##  Live Demo
 
 🔗 https://medbuddy-heart-prediction.streamlit.app
 
-## 📌 Overview
+##  Overview
 
 MedBuddy.ML is an end-to-end Machine Learning project that predicts whether a patient is at risk of heart disease using clinical health data.
 
@@ -21,7 +21,7 @@ The project includes:
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Predicts heart disease risk
 - Displays prediction probability
@@ -31,7 +31,7 @@ The project includes:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech used
 
 - Python
 - Pandas
@@ -45,34 +45,7 @@ The project includes:
 
 ---
 
-## 📂 Project Structure
-
-```
-med-buddy--ML_model/
-│
-├── backend/
-│   ├── training.py
-│   ├── predictor.py
-│   └── main.py
-│
-├── dataset/
-|
-├── model_dir/
-│   └── heart_disease_prediction_model.joblib
-│
-├── notebooks/
-│
-├── logs/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
----
-
-## 📊 Input Features
+##  Input Features
 
 - Age
 - Sex
@@ -90,7 +63,7 @@ med-buddy--ML_model/
 
 ---
 
-## ⚙️ Installation
+##  Installation process for the users
 
 Clone the repository
 
@@ -132,7 +105,7 @@ streamlit run app.py
 
 ---
 
-## 📷 Application Preview
+##  Application Preview
 ### Home Page
 
 ![Home Page](images/Screenshot%202026-07-01%20205720.png)
@@ -143,18 +116,18 @@ streamlit run app.py
 
 ---
 
-## 🌍 Deployment
+##  Deployment
 
 The application is deployed using **Streamlit Community Cloud**.
 
-Live Application:
+link:
 
 https://medbuddy-heart-prediction.streamlit.app
 
 ---
 
 
-## 👨‍💻 Author
+## Created by--
 
 **Hammad Hussain**
 
