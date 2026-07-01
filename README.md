@@ -40,6 +40,7 @@ The project includes:
 - Scikit-learn
 - XGBoost
 - Streamlit
+- FastApi
 - Joblib
 - Git & GitHub
   
