@@ -1,5 +1,12 @@
+import os
+import requests
 import streamlit as st
-from backend.predictor import predict
+from dotenv import load_dotenv
+
+# load .env to env vars
+load_dotenv()
+
+API_URL = os.getenv("API_URL")
 
 st.set_page_config(
     page_title="MedBuddy.ML",
@@ -52,15 +59,25 @@ if st.button("🔍 Predict"):
         "thal": thal
     }
 
-    prediction = predict(input_data=input_data)
+    response = requests.post(API_URL, json=input_data)
 
-    st.divider()    
-
-    st.metric(
-            label="Heart Disease Probability",
-            value=f"{prediction['probability']*100:.1f}%"
-        )
-    if prediction["prediction"] == 1:
-        st.error("⚠️Model Prediction: Heart Disease Detected")
+    if response.status_code != 200:
+        st.error("Something went wrong. Try again later...")
+    
     else:
-        st.success("✅ Model Prediction: No Heart Disease Detected")
+        result = response.json()
+        prediction = result["prediction"]
+        probability = result["probability"]
+        diagnosis = result["diagnosis"]
+
+        st.divider()
+
+        st.metric(
+            label="Heart Disease Probability",
+            value=f"{probability:.2f}"
+        )
+
+        if prediction == 1:
+            st.error(f"⚠️Model Prediction: {diagnosis}")
+        else:
+            st.success(f"✅ Model Prediction: {diagnosis}")
