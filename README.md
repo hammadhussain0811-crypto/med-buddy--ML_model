@@ -88,6 +88,43 @@ This project demonstrates an end-to-end machine learning pipeline, covering data
     13.Frontend Development
     14.Deployment
 
+ ## Project Structure
+
+
+  ```text
+  MED-BUDDY--ML_MODEL/
+  │
+  ├── backend/
+  │   ├── main.py                      # FastAPI application and API endpoints
+  │   ├── predictor.py                 # Loads the trained model and performs predictions
+  │   └── training.py                  # Model training, evaluation, and model serialization
+  │
+  ├── frontend/
+  │   └── app.py                       # Streamlit user interface
+  │
+  ├── dataset/
+  │   └── heart.csv                    # Training dataset
+  │
+  ├── model_dir/
+  │   └── heart_disease_prediction_model.joblib
+  │                                   # Trained Random Forest model
+  │
+  ├── notebooks/
+  │   └── model_notebook.ipynb         # EDA and model experimentation
+  │
+  ├── logs/
+  │   └── app.log                      # Application logs
+  │
+  ├── images/                          # README screenshots
+  │
+  ├── .env                             # Local environment variables (not included in Git)
+  ├── env_template.txt                 # Sample environment variables
+  ├── .gitignore
+  ├── LICENSE
+  ├── README.md
+  └── requirements.txt
+  ```
+
 ## Model Development
   Multiple machine learning models were evaluated during experimentation. Their performance was compared using cross-validation, and the best-performing model was selected after hyperparameter tuning.(you can see in the notebook)
   
