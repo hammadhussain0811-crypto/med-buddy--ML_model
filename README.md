@@ -133,43 +133,72 @@ This project demonstrates an end-to-end machine learning pipeline, covering data
     
 ##  Installation process for the users
 
-Clone the repository
 
-```bash
-git clone https://github.com/hammadhussain0811-crypto/med-buddy--ML_model.git
-```
 
-Move into the project
-
-```bash
-cd med-buddy--ML_model
-```
-
-Create virtual environment
-
-```bash
-python -m venv venv
-```
-
-Activate virtual environment
-
-Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application
-
-```bash
-streamlit run app.py
-```
+  ### Clone the repository
+  
+  ```bash
+  git clone https://github.com/hammadhussain0811-crypto/med-buddy--ML_model.git
+  ```
+  
+  ### Move into the project
+  
+  ```bash
+  cd med-buddy--ML_model
+  ```
+  
+  ### Create a virtual environment
+  
+  ```bash
+  python -m venv venv
+  ```
+  
+  ### Activate the virtual environment
+  
+  **Windows**
+  
+  ```bash
+  venv\Scripts\activate
+  ```
+  
+  ### Install dependencies
+  
+  ```bash
+  pip install -r requirements.txt
+  ```
+  
+  ### Configure environment variables
+  
+  Create a `.env` file using `env_template.txt` as a reference.
+  
+  ### Run the FastAPI backend
+  
+  ```bash
+  uvicorn backend.main:app --reload
+  ```
+  
+  ### Run the Streamlit frontend
+  
+  Open a **new terminal**, activate the virtual environment again, and run:
+  
+  ```bash
+  streamlit run frontend/app.py
+  ```
+  
+  ### Open the application
+  
+  Frontend:
+  
+  ```
+  http://localhost:8501
+  ```
+  
+  Backend API Documentation:
+  
+  ```
+  http://127.0.0.1:8000/docs
+  ```t run app.py
+  ```
 
 ---
 
