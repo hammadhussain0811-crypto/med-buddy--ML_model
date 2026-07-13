@@ -4,46 +4,52 @@ A Machine Learning web application that predicts the probability of heart diseas
 
 ##  Live Demo
 
-🔗 https://medbuddy-heart-prediction.streamlit.app
+🔗(https://dr-ml-multi-disease-predictor.streamlit.app/diabetes_prediction)
 
 ##  Overview
 
-MedBuddy.ML is an end-to-end Machine Learning project that predicts whether a patient is at risk of heart disease using clinical health data.
+This project demonstrates an end-to-end machine learning pipeline, covering data preprocessing, exploratory data analysis, model training, evaluation, and deployment. The trained model is served through a FastAPI backend, while an interactive Streamlit interface enables users to enter patient information and receive real-time predictions. The project is organized with separate frontend and backend components, making the code easier to maintain and extend.
 
-The project includes:
+## Features
 
-- Data preprocessing
-- Model training
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature visualization
+- Model comparison using multiple machine learning algorithms
+- Cross-validation for robust model evaluation
+- Hyperparameter tuning for model optimization
 - Model serialization using Joblib
-- Prediction pipeline
-- fastapi backend main.py for future improvement like deployment using aws or hugging face space
-- Interactive Streamlit web application
-- Cloud deployment using Streamlit Community Cloud
-
----
-
-##  Features
-
-- Predicts heart disease risk
-- Displays prediction probability
-- Interactive and user-friendly interface
-- Real-time predictions
-- Deployed online for public access
-
----
+- Clean and organized project structure
+- REST API developed with FastAPI
+- Backend deployment on Render
+- Interactive frontend built with Streamlit
+- Live prediction through deployed API
 
 ##  Tech used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Streamlit
-- FastApi
-- Joblib
-- Git & GitHub
+
+  ### Programming Language
   
+      Python
+  
+  ### Libraries
+  
+      Pandas
+      NumPy
+      Matplotlib
+      Scikit-learn
+      Joblib
+      FastAPI
+      Streamlit
+      Requests
+      python-dotenv
+  
+  ### Deployment
+  
+      Backend: Render
+      Frontend: Streamlit Community Cloud
+      - Git & GitHub
+      
 
 ---
 
@@ -63,8 +69,31 @@ The project includes:
 - Number of Major Vessels
 - Thal
 
----
 
+## Machine Learning Workflow
+    The project was developed following a complete machine learning pipeline:
+
+    1.Data Collection
+    2.Data Cleaning
+    3.Exploratory Data Analysis
+    4.Feature Engineering
+    5.Data Visualization
+    6.Model Training
+    7.Model Comparison
+    8.Cross Validation
+    9.Hyperparameter Tuning
+    10.Model Selection
+    11.Model Serialization
+    12.API Development
+    13.Frontend Development
+    14.Deployment
+
+## Model Development
+  Multiple machine learning models were evaluated during experimentation. Their performance was compared using cross-validation, and the best-performing model was selected after hyperparameter tuning.(you can see in the notebook)
+  
+  The final deployed model is:
+  Random Forest Classifier
+    
 ##  Installation process for the users
 
 Clone the repository
